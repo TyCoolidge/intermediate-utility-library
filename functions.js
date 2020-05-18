@@ -27,4 +27,4 @@ function countingUp(input, input2, input3) {
       return counter + " Low Score, Try Again";
    }
    /// inputs 2, 4 , 10 should equal 1.
-}
+} //sdfdfsfsf
