@@ -28,3 +28,37 @@ function countingUp(input, input2, input3) {
    }
    /// inputs 2, 4 , 10 should equal 1.
 }
+
+/// contact lookup for NBA players
+var contactInfo = [
+   {
+      firstName: "Michael",
+      lastName: "Jordan",
+      jerseyNumber: ["23", " 45"],
+      teams: ["Bulls", " Wizards"],
+   },
+   {
+      firstName: "Lebron",
+      lastName: "James",
+      jerseyNumber: ["23", " 6"],
+      teams: ["Lakers", " Cavaliers", " Heat"],
+   },
+   {
+      firstName: "Kevin",
+      lastName: "Durant",
+      jerseyNumber: ["35", " 7"],
+      teams: ["Warriors", " Thunder", " Nets"],
+   },
+];
+
+function nbaPlayers(name, prop) {
+   // for loop will search to see if firstName == user input of name
+   //when then search to see if prop fit valid parameters
+   for (var i = 0; i < contactInfo.length; i++) {
+      if (contactInfo[i].firstName === name) {
+         // will return contact prop values, if not, then display this message
+         return contactInfo[i][prop] || "No such property";
+      }
+   }
+   return "No such contact";
+}
