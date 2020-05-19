@@ -62,3 +62,8 @@ function nbaPlayers(name, prop) {
    }
    return "No such contact";
 }
+
+function generateRandom(minimum, maximum) {
+   /// user can put in range and random number will generate
+   return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+}
