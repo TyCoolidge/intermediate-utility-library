@@ -67,3 +67,34 @@ function generateRandom(minimum, maximum) {
    /// user can put in range and random number will generate
    return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 }
+
+function removeSplice(index, remove) {
+   /// user will be able to splice the arr using their inputs
+   const arr = [
+      "eggs",
+      " milk",
+      " bread",
+      " meat",
+      " cheese",
+      " soda",
+      " chips",
+   ];
+   /// index is where to start splice, remove is how many to splice from index start position
+   arr.splice(index, remove);
+   return arr;
+}
+
+function addSplice(index, remove, add1, add2) {
+   //user will be able to splice from arr and add own values
+   const list = [
+      "eggs",
+      " milk",
+      " bread",
+      " meat",
+      " cheese",
+      " soda",
+      " chips",
+   ];
+   list.splice(index, remove, add1, add2);
+   return list;
+}
