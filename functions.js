@@ -98,3 +98,12 @@ function addSplice(index, remove, add1, add2) {
    list.splice(index, remove, add1, add2);
    return list;
 }
+
+///check for presence of an element with indexOf
+function checkFor(color) {
+   let colorList = ["red", "blue", "green", "yellow", "purple"];
+   if (colorList.indexOf(color) !== -1) {
+      return "Your color is in the list: red, blue, green, yellow, purple";
+   }
+   return "No color found";
+}
