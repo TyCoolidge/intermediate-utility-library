@@ -107,3 +107,10 @@ function checkFor(color) {
    }
    return "No color found";
 }
+
+/// using typeof to check the Type of a Variable
+function checkType(input) {
+   ///return the type of input ex: Boolean, Null, Undefined, Number, String, Symbol, Object
+
+   return typeof input;
+}
